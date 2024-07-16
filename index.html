@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/index.css">
+<!-- 구글폰트 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <title>pf4-remo</title>
+    <!-- 자바스크립트 -->
+    <script src="js/jquery-3.7.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("section#partners div.wrap ul.list:not(:nth-of-type(1))").hide();
+            $("section#partners div.wrap ul.button li a").click(function(){
+                $(this).addClass("bc");
+                $("section#partners div.wrap ul.button li a").not(this).removeClass("bc");
+                return false;
+            });
+
+            $("section#partners div.wrap ul.button li:nth-child(1) a").click(function(){
+                $("section#partners div.wrap ul.list:nth-of-type(1)").show();
+                $("section#partners div.wrap ul.list:not(:nth-of-type(1))").hide();
+            });
+                $("section#partners div.wrap ul.button li:nth-child(2) a").click(function(){
+                $("section#partners div.wrap ul.list:nth-of-type(2)").show();
+                $("section#partners div.wrap ul.list:not(:nth-of-type(2))").hide();
+            });
+                $("section#partners div.wrap ul.button li:nth-child(3) a").click(function(){
+                $("section#partners div.wrap ul.list:nth-of-type(3)").show();
+                $("section#partners div.wrap ul.list:not(:nth-of-type(3))").hide();
+            });
+                $("section#partners div.wrap ul.button li:nth-child(4) a").click(function(){
+                $("section#partners div.wrap ul.list:nth-of-type(4)").show();
+                $("section#partners div.wrap ul.list:not(:nth-of-type(4))").hide();
+            });
+                $("section#partners div.wrap ul.button li:nth-child(5) a").click(function(){
+                $("section#partners div.wrap ul.list:nth-of-type(5)").show();
+                $("section#partners div.wrap ul.list:not(:nth-of-type(5))").hide();
+             });
+
+    });
+
+    </script>
+</head>
+<body>
+<!-- 헤더영역 -->
+    <header id="header">
+        <div class="wrap">
+            <nav class="wrap flex">
+                <h1><a href="">remo</a></h1>
+                    <ul class="gnb flex">
+                        <li><a href="">About REMO</a></li>
+                        <li><a href="">Products</a></li>
+                        <li><a href="">News</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                    <ul class="enb">
+                        <li><a href="">EN</a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+            </nav>
+            <div class="title">
+                <h1></h1>
+                <p>REMO, a company specializing<br>
+                    in healthcare AI SaaS.</p>
+            </div>
+        </div>
+    </header>
+    <!-- 메인영역 -->
+    <section id="tech" class="wrap">
+        <div class="wrap flex">
+            <h1 class="h1">Technology</h1>
+            <ul class="box flex">
+                <li>
+                    <img src="img/t1.svg" alt="">
+                    <h3 class="h3">Makerless Motion Capture</h3>
+                    <p class="p">High-performance marker 2D/3D motion<br>capture system capable of one camera<br>without professional motion capture<br>equipment.</p>
+                </li>
+                <li>
+                    <img src="img/t2.svg" alt="">
+                    <h3 class="h3">Hardware Interoperable</h3>
+                    <p class="p">Motion analysis system that can be used<br>in general camera equipment, mobile<br>equipment, laptop webcam, CCTV, etc.</p>
+                </li>
+                <li>
+                    <img src="img/t3.svg" alt="">
+                    <h3 class="h3">Real Time</h3>
+                    <p class="p">Edge device or cloud server based<br>Real-time analysis system.</p>
+                </li>
+                <li>
+                    <img src="img/t4.svg" alt="">
+                    <h3 class="h3">AI Experts</h3>
+                    <p class="p">A team composed of medical engineering<br>and AI specialists took the lead in<br>providing the preceding AI service.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="movement">
+        <div class="move wrap flex">
+            <p class="short p">About REMO</p>
+            <div class="flex">
+            <h1 class="h1">Design healthy<br>
+                movement by REMO</h1>
+            <p class="long p">Body Shape, Motion Video AI Analysis Service,<br>
+                3D Model Generation, Processing, Simulation, Video<br>
+                Analysis AI Software Development and Supply.</p>
+            </div>
+        </div>
+    </section>
+    <section id="rym">
+    <div class="ment wrap flex">
+        <ul class="flex">
+            <li class="h3">RECOVER</li>
+            <li class="h3">YOUR BODY</li>
+            <li class="h3">MOVEMENT</li>
+        </ul>
+    </div>
+    </section>
+    <section id="product">
+        <div class="wrap grid">
+            <div class="ep">
+                <h2 class="h1">PRODUCTS</h2>
+                <p class="h5">REMO provides the simplest healthcare service<br>
+                    with video AI technology. Our main product,<br>
+                    REMOBody-S, is a markerless video AI<br>
+                    gait analysis medical device software.<br>
+                    We also service AI body type analyzers(FINEFIT),<br>
+                    APIs for healthcare.</p>
+                <a href="">VIEW MORE</a>
+            </div>
+                <div class="kind">
+                    <ul class="bigg">
+                        <li class="grid">
+                            <img src="img/p1.png" alt="">
+                            <h3 class="h3"><a href="">REMOBody-s</a></h3>
+                            <p class="p"><a href="">Video-based Markerless 3D Gait Analysis System.</a></p>
+                            <ul class="round">
+                                <li><a href="">AI Gait Solution</a></li>
+                                <li><a href="">Markerless</a></li>
+                                <li><a href="">3D Motion Analysis</a></li>
+                                <li><a href="">3D Gait Analysis</a></li>
+                            </ul>
+                        </li>
+                        <li class="grid">
+                            <img src="img/p2.png" alt="">
+                            <h3 class="h3"><a href="">FINEFIT</a></h3>
+                            <p class="p"><a href="">AI body shape analtsis, body function evaluation solution.</a></p>
+                            <ul class="round">
+                                <li><a href="">AI body Analysis</a></li>
+                                <li><a href="">Evaluation Solution</a></li>
+                                <li><a href="">Pelvic Tilt</a></li>
+                                <li><a href="">Body Inclination</a></li>
+                                <li><a href="">Shoulder Height Discrepancy</a></li>
+                                <li><a href="">Anterior-Posterior Tilt</a></li>
+                                <li><a href="">Head Tilt</a></li>
+                                <li><a href="">Q Angle</a></li>
+                                <li><a href="">Forward Head Posture</a></li>
+                                <li><a href="">Round Shoulder</a></li>
+                                <li><a href="">Knee Inclination</a></li>
+                            </ul>
+                        </li>
+                        <li class="grid">
+                            <img src="img/p3.png" alt="">
+                            <h3 class="h3"><a href="">Healthcare API</a></h3>
+                            <p class="p"><a href="">Vision AI healthcare APIs for developing personalized healthcare services.</a></p>
+                            <ul class="round">
+                                <li><a href="">Body & Posture analysis API</a></li>
+                                <li><a href="">Gait analysis API</a></li>
+                                <li><a href="">Golf Analysis API</a></li>
+                                <li><a href="">Physical function evaluation API</a></li>
+                                <li><a href="">Body dimensional analysis API</a></li>
+                                <li><a href="">Heart rate prediction API</a></li>
+                                <li><a href="">Face recognition API</a></li>
+                                <li><a href="">Skin condition prediction API</a></li>
+                                <li><a href="">Blood pressure prediction API</a></li>
+                            </ul>
+                        </li>
+                        <li class="grid">
+                            <img src="img/p4.png" alt="">
+                            <h3 class="h3"><a href="">Object detection API</a></h3>
+                            <p class="p"><a href="">Ai-based Object Detection API to offer a more convenient and accurate service.</a></p>
+                            <ul class="round">
+                                <li><a href="">Recognize specific tools API</a></li>
+                                <li><a href="">OCR API</a></li>
+                                <li><a href="">Document translation API</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+    </section>    
+<section id="news">
+    <div class="wrap flex">
+        <h1 class="h1">News</h1>
+        <span>
+            <time datetime="">2022-11-09</time>
+            <p class="h5">‘리모바디S·웰에이징 라이프’, 건강관리 솔루션으로 주목</p>
+            <a href="">VIEW MORE</a>
+        </span>
+        <span>
+            <time datetime="">2023-05-08</time>
+            <p class="h5">리모, '2023 AI 바우처 지원사업' 소상공인 분과 최종 선정</p>
+            <a href="">VIEW MORE</a>
+        </span>
+        <span>
+            <time datetime="">2023-12-14</time>
+            <p class="h5">리모, '2023 미래창조경영우수기업대상' 수상…인공지능 헬스케어 스타트업 부문</p>
+            <a href="">VIEW MORE</a>
+        </span>
+        <span>
+            <time datetime="">2023-09-05</time>
+            <p class="h5">리모, AI 보행분석 의료기기 '리모바디S' 선보인다... '2023 KHF' 참가</p>
+            <a href="">VIEW MORE</a>
+        </span>
+        <span>
+            <time datetime="">2023-09-07</time>
+            <p class="h5">리모, KHF에 AI 보행 분석 의료기기 리모바디S 전시</p>
+            <a href="">VIEW MORE</a>
+        </span>
+    </div>
+</section>
+<section id="partners">
+    <div class="wrap grid">
+        <div class="borderB">
+        <h1>OUR PARTNERS</h1>
+        <ul class="button">
+            <li><a href="">Hospital</a></li>
+            <li><a href="">Corporation</a></li>
+            <li><a href="">University</a></li>
+            <li><a href="">Wellness</a></li>
+            <li><a href="">Digital healthcare</a></li>
+        </ul>
+    </div>
+        <ul class="list">
+            <li><img src="img/h1.png" alt=""></li>
+            <li><img src="img/h2.png" alt=""></li>
+            <li><img src="img/h3.png" alt=""></li>
+            <li><img src="img/h4.png" alt=""></li>
+            <li><img src="img/h5.png" alt=""></li>
+            <li><img src="img/h6.png" alt=""></li>
+        </ul>
+        <ul class="list">
+            <li><img src="img/c1.png" alt=""></li>
+            <li><img src="img/c2.png" alt=""></li>
+            <li><img src="img/c3.png" alt=""></li>
+            <li><img src="img/c4.png" alt=""></li>
+            <li><img src="img/c5.png" alt=""></li>
+            <li><img src="img/c6.png" alt=""></li>
+        </ul>
+        <ul class="list">
+            <li><img src="img/u1.png" alt=""></li>
+            <li><img src="img/u2.png" alt=""></li>
+            <li><img src="img/u3.png" alt=""></li>
+            <li><img src="img/u4.png" alt=""></li>
+            <li><img src="img/u5.png" alt=""></li>
+        </ul>
+        <ul class="list">
+            <li><img src="img/w1.png" alt=""></li>
+            <li><img src="img/w2.png" alt=""></li>
+        </ul>
+        <ul class="list">
+            <li><img src="img/d1.png" alt=""></li>
+        </ul>
+    </div>
+</section>
+<section id="contact">
+    <div class="wrap">
+        <h1 class="h1">CONTACT US</h1>
+        <div class="set12">
+        <div class="set1">
+        <h2 class="h3">Type of inquiry</h2>
+        <ul class="type flex">
+            <li><a href="">REMOBody-S</a></li>
+            <li><a href="">FINEFIT</a></li>
+            <li><a href="">API</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Etc</a></li>
+        </ul>
+    </div>
+    <div class="set2">
+        <h2 class="h3">let's talk</h2>
+        <ul class="talk flex">
+            <li>
+                <p>Your Name</p>
+                <a href="">Please enter your name</a>
+            </li>
+            <li>
+                <p>Phone Number</p>
+                <a href="">Please enter your name</a>
+            </li>
+            <li>
+                <p>Email</p>
+                <a href="">Please enter your name</a>
+            </li>
+            <li>
+                <p>Message</p>
+                <a href="">Please enter your name</a>
+            </li>
+        </ul>
+    </div>
+    </div>
+        <span class="grid">
+            <i></i>
+            <a class="p bold big" href="">I agree to share my personal data in accorance with the privacy policy.</a>
+            <a class="p small" href="">Privacy Policy.</a>
+            <a class="btn" href="">SEND</a></span>
+    </div>
+</section>
+
+    
+    <!-- 하단영역 -->
+</body>
+</html>
